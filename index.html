@@ -1,0 +1,2400 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从八条海外职场视频中提炼的结构化职场行动方法论：目标、行动、证据、表达与复利。">
+  <title>看见价值，推动事情｜结构化职场行动方法论</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%231d1d1f' stroke-width='7'/%3E%3Cpath d='M25 9a11 11 0 0 1 2 7' fill='none' stroke='%23007aff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://miaoda.feishu.cn">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap">
+  <style>
+    :root {
+      --brand-50: #e8f2ff;
+      --brand-500: #007aff;
+      --brand-600: #0064d6;
+      --brand-700: #004fad;
+      --bg: #ffffff;
+      --bg-soft: #f5f5f7;
+      --bg-muted: #ececf0;
+      --ink: #1d1d1f;
+      --ink-2: #48484a;
+      --ink-3: #6e6e73;
+      --ink-4: #8e8e93;
+      --black: #000000;
+      --white: #f5f5f7;
+      --green: #248a3d;
+      --green-soft: #e9f9ee;
+      --orange: #c04b00;
+      --orange-soft: #fff4e8;
+      --red: #d70015;
+      --red-soft: #ffecea;
+      --border: #d9d9de;
+      --border-dark: rgba(255, 255, 255, 0.16);
+      --radius: 20px;
+      --font-sans: "DM Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 18px 50px -30px rgba(0, 0, 0, 0.35);
+      --ease: cubic-bezier(0.32, 0.72, 0, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 68px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+      letter-spacing: -0.012em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: var(--brand-600);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--brand-500) 45%, transparent);
+      outline-offset: 3px;
+    }
+
+    .reading-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 1001;
+      width: 0;
+      height: 2px;
+      background: var(--brand-500);
+    }
+
+    .globalnav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 48px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      background: color-mix(in srgb, #ffffff 82%, transparent);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .globalnav-inner {
+      width: min(1120px, calc(100% - 40px));
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-width: max-content;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 5px solid var(--ink);
+      border-right-color: var(--brand-500);
+      transform: rotate(-28deg);
+    }
+
+    .nav-links {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: var(--ink-2);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+      left: 0;
+      height: 2px;
+      border-radius: 99px;
+      background: var(--brand-500);
+      transform: scaleX(0);
+      transition: transform 180ms var(--ease);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links a.active::after {
+      transform: scaleX(1);
+    }
+
+    .nav-links .system-page-link {
+      color: var(--brand-600);
+      font-weight: 600;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-button,
+    .menu-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .icon-button:hover,
+    .menu-button:hover {
+      background: var(--bg-soft);
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .icon-button svg,
+    .menu-button svg {
+      width: 17px;
+      height: 17px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.8;
+    }
+
+    .hero {
+      overflow: hidden;
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .hero-inner {
+      width: min(1120px, calc(100% - 40px));
+      min-height: 700px;
+      margin: 0 auto;
+      padding: 96px 0 76px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(350px, 0.88fr);
+      align-items: center;
+      gap: 72px;
+    }
+
+    .hero-inner > * {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--ink-3);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .hero .eyebrow {
+      color: rgba(255, 255, 255, 0.58);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      text-wrap: pretty;
+    }
+
+    h1 {
+      max-width: 8.5em;
+      margin: 0;
+      font-size: clamp(58px, 7.6vw, 94px);
+      font-weight: 600;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      overflow-wrap: anywhere;
+    }
+
+    h1 .title-line {
+      display: block;
+    }
+
+    .hero-lead {
+      max-width: 34em;
+      margin: 28px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: clamp(19px, 2vw, 24px);
+      line-height: 1.42;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      min-height: 46px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 180ms var(--ease), background 180ms var(--ease);
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .button-primary {
+      background: var(--brand-500);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: var(--brand-600);
+    }
+
+    .button-ghost {
+      border-color: rgba(255, 255, 255, 0.28);
+      color: white;
+      background: transparent;
+    }
+
+    .button-ghost:hover {
+      background: rgba(255, 255, 255, 0.09);
+    }
+
+    .hero-meta {
+      margin-top: 52px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .metric {
+      min-width: 105px;
+    }
+
+    .metric strong {
+      display: block;
+      color: white;
+      font-family: var(--font-mono);
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.045em;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 3px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 12px;
+    }
+
+    .value-orbit {
+      position: relative;
+      aspect-ratio: 1;
+      min-height: 430px;
+      border: 1px solid var(--border-dark);
+      border-radius: 42px;
+      background: #08080a;
+      isolation: isolate;
+    }
+
+    .value-orbit::before,
+    .value-orbit::after {
+      content: "";
+      position: absolute;
+      inset: 17%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .value-orbit::after {
+      inset: 33%;
+      border-color: rgba(0, 122, 255, 0.5);
+    }
+
+    .orbit-core {
+      position: absolute;
+      inset: 40%;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--brand-500);
+      color: white;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+    }
+
+    .orbit-node {
+      position: absolute;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .orbit-node small {
+      color: rgba(255, 255, 255, 0.42);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .node-1 { top: 9%; left: 41%; }
+    .node-2 { top: 31%; right: 6%; }
+    .node-3 { right: 13%; bottom: 13%; }
+    .node-4 { bottom: 9%; left: 20%; }
+    .node-5 { top: 31%; left: 7%; }
+
+    .orbit-line {
+      position: absolute;
+      inset: 9%;
+      width: 82%;
+      height: 82%;
+      fill: none;
+      stroke: var(--brand-500);
+      stroke-dasharray: 2 8;
+      stroke-linecap: round;
+      stroke-width: 1.5;
+      opacity: 0.78;
+      animation: orbitDash 18s linear infinite;
+    }
+
+    @keyframes orbitDash {
+      to { stroke-dashoffset: -200; }
+    }
+
+    .source-note {
+      background: #111113;
+      color: rgba(255, 255, 255, 0.66);
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .source-note-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .source-note strong {
+      flex: 0 0 auto;
+      color: white;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .section {
+      padding: 112px 0;
+    }
+
+    .section.gray {
+      background: var(--bg-soft);
+    }
+
+    .section.black {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .container {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .container-wide {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 58px;
+    }
+
+    .section-head.center {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(40px, 5vw, 66px);
+      font-weight: 600;
+      line-height: 1.06;
+      letter-spacing: -0.045em;
+    }
+
+    .section-head p {
+      max-width: 650px;
+      margin: 20px 0 0;
+      color: var(--ink-3);
+      font-size: 20px;
+      line-height: 1.52;
+      letter-spacing: -0.024em;
+    }
+
+    .section-head.center p {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .black .section-head p {
+      color: rgba(255, 255, 255, 0.58);
+    }
+
+    .thesis {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 78px;
+      align-items: start;
+    }
+
+    .thesis-quote {
+      position: sticky;
+      top: 90px;
+      margin: 0;
+      font-size: clamp(34px, 4.4vw, 54px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -0.042em;
+    }
+
+    .thesis-quote span {
+      color: var(--brand-500);
+    }
+
+    .principles {
+      border-top: 1px solid var(--border);
+    }
+
+    .principle {
+      padding: 28px 0;
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 22px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .principle-index {
+      padding-top: 3px;
+      color: var(--ink-4);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    .principle h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: -0.022em;
+    }
+
+    .principle p {
+      margin: 0;
+      color: var(--ink-3);
+    }
+
+    .loop {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg);
+    }
+
+    .loop-step {
+      min-height: 310px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border);
+    }
+
+    .loop-step:last-child {
+      border-right: 0;
+    }
+
+    .step-num {
+      color: var(--brand-600);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .loop-step h3 {
+      margin: 42px 0 10px;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .loop-step p {
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .loop-prompt {
+      margin-top: auto;
+      padding-top: 22px;
+      color: var(--ink-2);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .loop-equation {
+      margin-top: 22px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-radius: 16px;
+      background: var(--black);
+      color: white;
+    }
+
+    .loop-equation code {
+      color: rgba(255, 255, 255, 0.78);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      white-space: normal;
+    }
+
+    .loop-equation strong {
+      color: var(--brand-500);
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .models-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .model {
+      min-height: 340px;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .model.large {
+      grid-column: span 7;
+    }
+
+    .model.small {
+      grid-column: span 5;
+    }
+
+    .model.dark {
+      border-color: var(--black);
+      background: var(--black);
+      color: white;
+    }
+
+    .model.blue {
+      border-color: var(--brand-500);
+      background: var(--brand-500);
+      color: white;
+    }
+
+    .model-tag {
+      color: var(--ink-4);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .model.dark .model-tag,
+    .model.blue .model-tag {
+      color: rgba(255, 255, 255, 0.56);
+    }
+
+    .model h3 {
+      max-width: 12em;
+      margin: 42px 0 12px;
+      font-size: 31px;
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    .model p {
+      max-width: 38em;
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 15px;
+    }
+
+    .model.dark p,
+    .model.blue p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .model-rule {
+      margin-top: auto;
+      padding-top: 28px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--ink-2);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .model.dark .model-rule,
+    .model.blue .model-rule {
+      border-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    .model-rule span:last-child {
+      color: var(--ink-4);
+      font-weight: 400;
+      text-align: right;
+    }
+
+    .model.dark .model-rule span:last-child,
+    .model.blue .model-rule span:last-child {
+      color: rgba(255, 255, 255, 0.48);
+    }
+
+    .context-map {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 14px;
+    }
+
+    .context-rail {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: var(--black);
+      color: white;
+    }
+
+    .context-rail h3 {
+      max-width: 8em;
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .context-rail p {
+      margin: 18px 0 0;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 15px;
+    }
+
+    .phase-list {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phase {
+      padding: 18px 0;
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .phase:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .phase span {
+      color: var(--brand-500);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    .phase strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .phase small {
+      display: block;
+      margin-top: 2px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 12px;
+    }
+
+    .context-details {
+      padding: 18px 36px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .context-row {
+      padding: 24px 0;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .context-row:last-child {
+      border-bottom: 0;
+    }
+
+    .context-row strong {
+      font-size: 14px;
+    }
+
+    .context-row p {
+      margin: 0;
+      color: var(--ink-3);
+      font-size: 14px;
+    }
+
+    .toolbox {
+      margin-bottom: 26px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+
+    .search-field {
+      min-height: 48px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .search-field svg {
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: var(--ink-4);
+      stroke-linecap: round;
+      stroke-width: 1.8;
+    }
+
+    .search-field input {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-button {
+      min-height: 42px;
+      padding: 0 15px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--bg-muted);
+      color: var(--ink-2);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .filter-button.active {
+      background: var(--black);
+      color: white;
+    }
+
+    .scenarios {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .scenario {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+      overflow: hidden;
+    }
+
+    .scenario[hidden] {
+      display: none;
+    }
+
+    .scenario summary {
+      min-height: 112px;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 44px 1fr 24px;
+      align-items: start;
+      gap: 15px;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .scenario summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .scenario-num {
+      color: var(--brand-600);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    .scenario-title strong {
+      display: block;
+      font-size: 18px;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .scenario-title span {
+      display: block;
+      margin-top: 5px;
+      color: var(--ink-4);
+      font-size: 12px;
+    }
+
+    .scenario-plus {
+      position: relative;
+      width: 20px;
+      height: 20px;
+    }
+
+    .scenario-plus::before,
+    .scenario-plus::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 4px;
+      width: 12px;
+      height: 1px;
+      background: var(--ink-2);
+      transition: transform 180ms var(--ease);
+    }
+
+    .scenario-plus::after {
+      transform: rotate(90deg);
+    }
+
+    .scenario[open] .scenario-plus::after {
+      transform: rotate(0);
+    }
+
+    .scenario-body {
+      margin: 0 24px 24px 83px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .scenario-label {
+      margin: 0 0 6px;
+      color: var(--ink-4);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .script {
+      margin: 0 0 20px;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .scenario-note {
+      margin: 0;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: var(--bg-soft);
+      color: var(--ink-3);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .empty-result {
+      display: none;
+      padding: 36px;
+      border: 1px dashed var(--border);
+      border-radius: 16px;
+      color: var(--ink-3);
+      text-align: center;
+    }
+
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius);
+    }
+
+    .week {
+      min-height: 360px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-dark);
+    }
+
+    .week:last-child {
+      border-right: 0;
+    }
+
+    .week-num {
+      color: var(--brand-500);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .week h3 {
+      margin: 38px 0 10px;
+      color: white;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .week p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+    }
+
+    .week ul {
+      margin: auto 0 0;
+      padding: 22px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid var(--border-dark);
+      list-style: none;
+    }
+
+    .week li {
+      position: relative;
+      padding-left: 16px;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .week li::before {
+      content: "";
+      position: absolute;
+      top: 0.62em;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--brand-500);
+    }
+
+    .daily-card {
+      margin-top: 16px;
+      padding: 26px 28px;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 30px;
+      border-radius: 16px;
+      background: #111113;
+      border: 1px solid var(--border-dark);
+    }
+
+    .daily-card strong {
+      color: white;
+      font-size: 18px;
+    }
+
+    .daily-card p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 13px;
+    }
+
+    .guardrails {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .guardrail-head,
+    .guardrail-row {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr 1.2fr;
+    }
+
+    .guardrail-head {
+      background: var(--black);
+      color: white;
+    }
+
+    .guardrail-head div {
+      padding: 18px 22px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .guardrail-row {
+      border-bottom: 1px solid var(--border);
+      background: white;
+    }
+
+    .guardrail-row:last-child {
+      border-bottom: 0;
+    }
+
+    .guardrail-row > div {
+      padding: 22px;
+      border-right: 1px solid var(--border);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .guardrail-row > div:last-child {
+      border-right: 0;
+    }
+
+    .risk-name {
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    .guardrail-row .risk {
+      color: var(--ink-3);
+    }
+
+    .guardrail-row .correction {
+      color: var(--ink-2);
+      font-weight: 500;
+    }
+
+    .checklist-layout {
+      display: grid;
+      grid-template-columns: 0.78fr 1.22fr;
+      gap: 16px;
+    }
+
+    .checklist-card {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: var(--black);
+      color: white;
+    }
+
+    .checklist-card h3 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .checklist-card p {
+      margin: 14px 0 0;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+    }
+
+    .checklist {
+      margin: 34px 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+
+    .checklist li {
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      border-top: 1px solid var(--border-dark);
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 13px;
+    }
+
+    .checklist li:last-child {
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .check {
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+    }
+
+    .ledger {
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+    }
+
+    .ledger-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .ledger h3 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .ledger-badge {
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: var(--brand-50);
+      color: var(--brand-700);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .ledger-grid {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 28px;
+    }
+
+    .ledger-item {
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .ledger-item strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .ledger-item span {
+      display: block;
+      margin-top: 4px;
+      color: var(--ink-3);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--border);
+    }
+
+    .source-card {
+      min-height: 180px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      color: var(--ink);
+      transition: background 180ms var(--ease);
+    }
+
+    .source-card:hover {
+      background: var(--bg-soft);
+      text-decoration: none;
+    }
+
+    .source-card small {
+      color: var(--ink-4);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .source-card strong {
+      max-width: 23em;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .source-card span {
+      margin-top: auto;
+      color: var(--brand-600);
+      font-size: 12px;
+    }
+
+    .method-note {
+      margin-top: 20px;
+      color: var(--ink-4);
+      font-size: 12px;
+    }
+
+    .footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      background: var(--bg-soft);
+      color: var(--ink-3);
+    }
+
+    .footer-inner {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      font-size: 11px;
+    }
+
+    .footer strong {
+      color: var(--ink-2);
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        gap: 17px;
+      }
+
+      .hero-inner {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 58px;
+      }
+
+      .value-orbit {
+        width: min(520px, 100%);
+        min-height: auto;
+        margin: 0 auto;
+      }
+
+      .loop {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .loop-step {
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .loop-step:nth-child(2n) {
+        border-right: 0;
+      }
+
+      .loop-step:last-child {
+        grid-column: span 2;
+        min-height: 240px;
+        border-bottom: 0;
+      }
+
+      .context-map {
+        grid-template-columns: 1fr;
+      }
+
+      .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .week:nth-child(2) {
+        border-right: 0;
+      }
+
+      .week:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border-dark);
+      }
+
+      .checklist-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 16px;
+      }
+
+      .globalnav-inner {
+        width: min(100% - 24px, 1120px);
+      }
+
+      .nav-links {
+        position: fixed;
+        inset: 48px 0 0;
+        z-index: 999;
+        padding: 36px 24px;
+        display: none;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(255, 255, 255, 0.98);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 17px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 18px;
+      }
+
+      .nav-links a::after {
+        display: none;
+      }
+
+      .menu-button {
+        display: inline-flex;
+      }
+
+      .hero-inner {
+        width: min(100% - 32px, 1120px);
+        padding: 72px 0 56px;
+        display: block;
+      }
+
+      h1 {
+        max-width: 100%;
+        font-size: clamp(50px, 16vw, 66px);
+        word-break: break-all;
+        text-wrap: wrap;
+      }
+
+      .hero-lead {
+        max-width: 100%;
+        font-size: 19px;
+      }
+
+      .hero-meta {
+        gap: 18px;
+      }
+
+      .metric {
+        min-width: 90px;
+      }
+
+      .value-orbit {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        margin-top: 58px;
+        border-radius: 28px;
+      }
+
+      .orbit-node {
+        font-size: 12px;
+      }
+
+      .source-note-inner,
+      .container,
+      .container-wide,
+      .footer-inner {
+        width: min(100% - 32px, 1120px);
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-head {
+        margin-bottom: 42px;
+      }
+
+      .section-head h2 {
+        font-size: clamp(38px, 12vw, 54px);
+      }
+
+      .section-head p {
+        font-size: 17px;
+      }
+
+      .thesis {
+        grid-template-columns: 1fr;
+        gap: 46px;
+      }
+
+      .thesis-quote {
+        position: static;
+      }
+
+      .loop {
+        grid-template-columns: 1fr;
+      }
+
+      .loop-step,
+      .loop-step:nth-child(2n) {
+        min-height: 250px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .loop-step:last-child {
+        grid-column: auto;
+      }
+
+      .loop-equation {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .model.large,
+      .model.small {
+        grid-column: span 12;
+      }
+
+      .model {
+        min-height: 310px;
+        padding: 28px;
+      }
+
+      .context-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .toolbox {
+        grid-template-columns: 1fr;
+      }
+
+      .scenarios {
+        grid-template-columns: 1fr;
+      }
+
+      .scenario-body {
+        margin-left: 24px;
+      }
+
+      .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .week,
+      .week:nth-child(2) {
+        min-height: 320px;
+        border-right: 0;
+        border-bottom: 1px solid var(--border-dark);
+      }
+
+      .week:last-child {
+        border-bottom: 0;
+      }
+
+      .daily-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .guardrail-head {
+        display: none;
+      }
+
+      .guardrail-row {
+        padding: 10px 20px;
+        grid-template-columns: 1fr;
+      }
+
+      .guardrail-row > div {
+        padding: 12px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .guardrail-row > div:last-child {
+        border-bottom: 0;
+      }
+
+      .risk-name::before,
+      .risk::before,
+      .correction::before {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--ink-4);
+        font-family: var(--font-mono);
+        font-size: 8px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .risk-name::before { content: "风险模式"; }
+      .risk::before { content: "为什么危险"; }
+      .correction::before { content: "正确校正"; }
+
+      .ledger-grid,
+      .source-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .source-card {
+        min-height: 165px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media print {
+      .globalnav,
+      .reading-progress,
+      .hero-actions,
+      .toolbox {
+        display: none;
+      }
+
+      body {
+        color: #000;
+        font-size: 11pt;
+      }
+
+      .hero,
+      .section.black {
+        background: #fff;
+        color: #000;
+      }
+
+      .hero-inner {
+        min-height: auto;
+        padding: 40px 0;
+        display: block;
+      }
+
+      .value-orbit {
+        display: none;
+      }
+
+      .hero-lead,
+      .black .section-head p,
+      .week p,
+      .daily-card p {
+        color: #444;
+      }
+
+      .source-note {
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #444;
+      }
+
+      .source-note strong,
+      .week h3,
+      .daily-card strong {
+        color: #000;
+      }
+
+      .section {
+        padding: 38px 0;
+      }
+
+      .thesis-quote {
+        position: static;
+      }
+
+      .scenario {
+        break-inside: avoid;
+      }
+
+      .scenario:not([open]) .scenario-body {
+        display: block;
+      }
+
+      .practice-grid,
+      .daily-card {
+        border-color: #aaa;
+        background: white;
+        color: #000;
+      }
+
+      .week {
+        border-color: #aaa;
+      }
+
+      .week li {
+        color: #333;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <header class="globalnav">
+    <div class="globalnav-inner">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>职场价值方法论</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="页面目录">
+        <a href="#principles">原则</a>
+        <a href="#loop">价值闭环</a>
+        <a href="#models">思维模型</a>
+        <a href="#playbooks">场景话术</a>
+        <a href="#practice">30 天练习</a>
+        <a href="#guardrails">边界</a>
+        <a class="system-page-link" href="methodology.html">系统方法论</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="printButton" type="button" aria-label="打印或保存为 PDF" title="打印或保存为 PDF">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9V3h12v6"></path>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <path d="M6 14h12v7H6z"></path>
+          </svg>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="打开目录" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Structured workplace action</p>
+          <h1 id="pageTitle"><span class="title-line">看见价值，</span><span class="title-line">推动事情。</span></h1>
+          <p class="hero-lead">一套从目标、行动、证据、表达走向职业复利的完整方法。它不教你表演强势，而是让真实贡献更容易被理解、被信任、被放大。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#loop">开始学习</a>
+            <a class="button button-ghost" href="#playbooks">直接查话术</a>
+          </div>
+          <div class="hero-meta" aria-label="资料概览">
+            <div class="metric"><strong>8</strong><span>条有效视频</span></div>
+            <div class="metric"><strong>39:29</strong><span>完整文稿时长</span></div>
+            <div class="metric"><strong>38</strong><span>条原始框架要点</span></div>
+          </div>
+        </div>
+
+        <div class="value-orbit" aria-label="价值闭环：目标、行动、证据、表达、复利">
+          <svg class="orbit-line" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 3C76 3 97 24 97 50S76 97 50 97 3 76 3 50 24 3 50 3Z"></path>
+          </svg>
+          <div class="orbit-core">VALUE</div>
+          <div class="orbit-node node-1"><small>01</small>目标</div>
+          <div class="orbit-node node-2"><small>02</small>行动</div>
+          <div class="orbit-node node-3"><small>03</small>证据</div>
+          <div class="orbit-node node-4"><small>04</small>表达</div>
+          <div class="orbit-node node-5"><small>05</small>复利</div>
+        </div>
+      </div>
+      <div class="source-note">
+        <div class="source-note-inner">
+          <strong>阅读说明</strong>
+          <span>本方法论提炼自个人海外职场观察，不把任何行为归因于国籍或族群。以下内容只保留可验证、可迁移的职业行为，并对夸大、推责、失信和机械交换等风险进行了校正。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="container thesis">
+        <blockquote class="thesis-quote">工作做完，不等于价值完成。价值还需要被<span>证明、理解与复用。</span></blockquote>
+        <div class="principles">
+          <article class="principle">
+            <span class="principle-index">01</span>
+            <div>
+              <h3>学行为，不学标签</h3>
+              <p>把视频中的“印度式”改写为具体能力：目标澄清、结果前置、数据表达、方案沟通、边界意识和主动争取。它们都可以训练，也不属于任何特定族群。</p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="principle-index">02</span>
+            <div>
+              <h3>包装不能改变事实</h3>
+              <p>职业化表达是把事实翻译成岗位语言，不是把“参与”改成未曾承担的“负责”。所有数据、职责、结果和身份都应经得住追问与核验。</p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="principle-index">03</span>
+            <div>
+              <h3>主动不等于抢功</h3>
+              <p>主动站位的前提是明确贡献、承担责任并共享信息。让自己的价值可见，不需要抹去他人的贡献，也不需要靠转移责任来证明自己。</p>
+            </div>
+          </article>
+          <article class="principle">
+            <span class="principle-index">04</span>
+            <div>
+              <h3>交换的上限是长期信任</h3>
+              <p>资源、机会和支持可以协商，但不必把每一次帮助都即时标价。真正可持续的互惠，是让双方目标更容易达成，并保留未来合作意愿。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gray" id="loop">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">The operating system</p>
+          <h2>五步价值闭环</h2>
+          <p>把任何任务都走完这五步。你不只是在交付工作，而是在持续建立“值得托付更重要事情”的证据。</p>
+        </div>
+        <div class="loop">
+          <article class="loop-step">
+            <span class="step-num">01 / ALIGN</span>
+            <h3>目标对齐</h3>
+            <p>先确认成功标准、优先级、边界、资源和决策人。避免勤奋地解决错问题。</p>
+            <div class="loop-prompt">问：完成到什么程度才算成功？</div>
+          </article>
+          <article class="loop-step">
+            <span class="step-num">02 / MOVE</span>
+            <h3>结构行动</h3>
+            <p>把工作拆成计划、责任、里程碑、依赖与风险。遇到未知时，先提出下一步。</p>
+            <div class="loop-prompt">问：现在最小的可推进行动是什么？</div>
+          </article>
+          <article class="loop-step">
+            <span class="step-num">03 / PROVE</span>
+            <h3>证据固化</h3>
+            <p>用数据、文档、版本、决策记录和反馈证明变化。没有证据的价值容易被遗忘。</p>
+            <div class="loop-prompt">问：结果如何被第三方复核？</div>
+          </article>
+          <article class="loop-step">
+            <span class="step-num">04 / EXPRESS</span>
+            <h3>价值表达</h3>
+            <p>先给结果，再给关键动作、业务影响、风险和请求。让对方迅速做出判断。</p>
+            <div class="loop-prompt">问：对方最需要据此决定什么？</div>
+          </article>
+          <article class="loop-step">
+            <span class="step-num">05 / COMPOUND</span>
+            <h3>机会复利</h3>
+            <p>把一次工作沉淀为流程、案例、能力、关系和下一次责任，而不是只换走时间。</p>
+            <div class="loop-prompt">问：这次交付留下了什么可复用资产？</div>
+          </article>
+        </div>
+        <div class="loop-equation">
+          <code>真实贡献 × 可验证证据 × 清晰表达 × 长期信任</code>
+          <strong>= 可持续职业价值</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="models">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">Five mental models</p>
+          <h2>五个底层思维模型</h2>
+          <p>话术只能解决一次对话，模型才能迁移到不同岗位、文化和职业阶段。</p>
+        </div>
+        <div class="models-grid">
+          <article class="model large dark">
+            <span class="model-tag">Model 01 · 目标倒推</span>
+            <h3>先定义胜利，再投入努力。</h3>
+            <p>接任务时先问成功标准、影响范围和优先级，再明确所需资源与后续责任。它把“接受工作”变成“管理结果”。</p>
+            <div class="model-rule"><span>适用：接任务、项目启动、谈职责</span><span>避免：只问个人回报</span></div>
+          </article>
+          <article class="model small">
+            <span class="model-tag">Model 02 · 结果可见</span>
+            <h3>从“做了什么”到“改变了什么”。</h3>
+            <p>陈述动作、指标变化与业务影响。无法量化时，也要说明范围、质量、时效、风险或决策影响。</p>
+            <div class="model-rule"><span>适用：汇报、简历、面试</span><span>避免：虚构数字</span></div>
+          </article>
+          <article class="model small blue">
+            <span class="model-tag">Model 03 · 方案沟通</span>
+            <h3>带着选择题，而不是裸问题。</h3>
+            <p>先讲问题与原因，再给方案、权衡和建议；同时说明需要谁在何时做出什么决策。</p>
+            <div class="model-rule"><span>适用：升级风险、跨部门协作</span><span>避免：假方案、真甩锅</span></div>
+          </article>
+          <article class="model large">
+            <span class="model-tag">Model 04 · 推进优先</span>
+            <h3>让事情持续流动，但责任必须跟着走。</h3>
+            <p>完美主义会让任务停滞。先交付可验证的下一步、暴露依赖、请求支持；转交时写清背景、当前状态、责任人与验收条件。</p>
+            <div class="model-rule"><span>适用：复杂任务、未知领域</span><span>避免：找理由把问题推出去</span></div>
+          </article>
+          <article class="model large">
+            <span class="model-tag">Model 05 · 互惠复利</span>
+            <h3>先创造价值，再把贡献沉淀为筹码。</h3>
+            <p>帮助别人时看见共同目标；完成工作后沉淀案例、方法、关系与能力。不是每次即时交换，而是让合作网络越来越强。</p>
+            <div class="model-rule"><span>适用：协作、争取机会、晋升</span><span>避免：把同事关系交易化</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gray" id="contexts">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">Career journey</p>
+          <h2>一套方法，贯穿三个阶段</h2>
+          <p>求职时证明潜力，工作中证明掌控力，发展时证明可承担更大责任。三者使用同一套证据逻辑。</p>
+        </div>
+        <div class="context-map">
+          <aside class="context-rail">
+            <h3>从获得机会，到创造下一次机会。</h3>
+            <p>每一阶段都要回答同一个问题：为什么应该把更重要的事情交给你？</p>
+            <div class="phase-list">
+              <div class="phase"><span>01</span><div><strong>进入</strong><small>简历、面试、谈薪</small></div></div>
+              <div class="phase"><span>02</span><div><strong>交付</strong><small>接任务、推进、汇报</small></div></div>
+              <div class="phase"><span>03</span><div><strong>放大</strong><small>协作、认可、晋升</small></div></div>
+            </div>
+          </aside>
+          <div class="context-details">
+            <div class="context-row">
+              <strong>进入：让潜力可信</strong>
+              <p>把真实经历翻译成岗位能力；用背景、行动、结果、成长证明可迁移性；通过反问理解岗位目标；谈薪前先掌握市场与预算信息。</p>
+            </div>
+            <div class="context-row">
+              <strong>交付：让工作可控</strong>
+              <p>接任务先对齐目标；未知任务先列计划与风险；遇到问题给选项与建议；汇报先说结果、证据、风险与下一步。</p>
+            </div>
+            <div class="context-row">
+              <strong>放大：让贡献复利</strong>
+              <p>主动表达兴趣和相关经验；接受认可并提出可复用场景；帮助他人时建立长期互惠；被误解时先控制损失，再用事实澄清责任。</p>
+            </div>
+            <div class="context-row">
+              <strong>共同底座</strong>
+              <p>事实准确、证据可核验、责任不漂移、边界被尊重、双方都能获益。没有这些底座，再漂亮的话术也会透支信任。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="playbooks">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">Situation playbooks</p>
+          <h2>14 个高频场景话术</h2>
+          <p>模板不是台词。使用时替换为真实项目、真实数据和真实约束，并保留你自己的语言习惯。</p>
+        </div>
+        <div class="toolbox">
+          <label class="search-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <input id="scenarioSearch" type="search" placeholder="搜索：谈薪、汇报、老板、面试……" aria-label="搜索场景话术">
+          </label>
+          <div class="filters" aria-label="按阶段筛选">
+            <button class="filter-button active" type="button" data-filter="all">全部</button>
+            <button class="filter-button" type="button" data-filter="entry">求职</button>
+            <button class="filter-button" type="button" data-filter="delivery">交付</button>
+            <button class="filter-button" type="button" data-filter="growth">发展</button>
+          </div>
+        </div>
+
+        <div class="scenarios" id="scenarioList">
+          <details class="scenario" data-category="delivery" data-keywords="接任务 目标 资源 回报 成功标准">
+            <summary><span class="scenario-num">01</span><span class="scenario-title"><strong>接到一个新任务</strong><span>先确认成功标准与资源</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“我可以负责。为了确保方向一致，我先确认三点：最终成功标准是什么？当前最优先的交付是什么？我可以协调哪些资源？我会在明天下午前给出计划、风险和第一个里程碑。”</p>
+              <p class="scenario-note">把个人回报放到责任范围与发展对话中讨论，不要让任务启动会变成即时讨价还价。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="delivery" data-keywords="陌生 不会 新领域 计划 风险">
+            <summary><span class="scenario-num">02</span><span class="scenario-title"><strong>接到完全陌生的任务</strong><span>承认经验缺口，但给出下一步</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“这个领域我还没有直接经验。我先整理目标、关键假设、执行步骤、资源依赖和主要风险，明天下午与你确认方向；其中专业判断部分，我建议请 X 同事做一次评审。”</p>
+              <p class="scenario-note">“不会”不是问题，“既没有计划也不请求支持”才是问题。不要假装具备不存在的专业能力。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="delivery" data-keywords="老板 忙不忙 优先级 进度 插单">
+            <summary><span class="scenario-num">03</span><span class="scenario-title"><strong>老板突然问“忙不忙”</strong><span>同步工作、进度与调整空间</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“我正在推进 A，目前完成约 70%，预计周四结束；B 等待外部反馈。如果有更紧急的事项，我可以调整优先级。你希望我先切换到哪一项？”</p>
+              <p class="scenario-note">目标不是证明自己很忙，而是让对方看见容量、进度和优先级判断。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="delivery" data-keywords="问题 方案 选择题 建议 决策">
+            <summary><span class="scenario-num">04</span><span class="scenario-title"><strong>遇到需要老板决策的问题</strong><span>问题、选项、权衡、建议</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“目前问题是 X，主要由 Y 导致。方案 A 成本较低，但会延后两周；方案 B 成本增加约 Z，但能守住发布日期。若时间优先，我建议 B。需要你在今天 16:00 前确认预算取舍。”</p>
+              <p class="scenario-note">选择题必须是真实选项，并清楚说明推荐依据、决策时限和残余风险。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="delivery" data-keywords="进度 汇报 结果 风险 下一步">
+            <summary><span class="scenario-num">05</span><span class="scenario-title"><strong>做项目进度汇报</strong><span>先结果，再证据、风险与请求</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“项目整体完成 95%，核心功能已上线，首轮测试通过率为 X。剩余风险集中在用户验证，负责人是 Y，预计下周二关闭。目前唯一需要支持的是 Z 资源。”</p>
+              <p class="scenario-note">不要只报“完成百分比”。百分比必须对应明确范围、验收口径和证据。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="delivery" data-keywords="失败 复盘 目标 未完成 改进">
+            <summary><span class="scenario-num">06</span><span class="scenario-title"><strong>汇报失败或目标未达成</strong><span>事实、归因、责任与改进闭环</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“目标完成 90%，差距来自需求变化和资源确认晚于计划。我对预警不足负有责任。现在已增加每周预测检查和资源确认节点；按新机制，下一周期可把同类风险提前两周暴露。”</p>
+              <p class="scenario-note">归因不是甩锅。区分外部因素、系统问题和自己的可控责任，并给出验证改进有效性的方式。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="growth" data-keywords="主动 争取 项目 站位 机会">
+            <summary><span class="scenario-num">07</span><span class="scenario-title"><strong>主动争取关键项目</strong><span>兴趣、证据、具体责任</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“我对这个项目很感兴趣。过去在 A 和 B 中处理过相似的用户研究与跨部门推进。我愿意负责 X 模块，并在本周先提交一版方案供团队判断。”</p>
+              <p class="scenario-note">主动站位不是抢占所有权。说清楚你能承担的范围，并尊重现有负责人与团队分工。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="growth" data-keywords="帮忙 同事 互惠 合作 边界">
+            <summary><span class="scenario-num">08</span><span class="scenario-title"><strong>同事反复请你帮忙</strong><span>把模糊帮忙变成清晰合作</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“这次我可以帮你完成 X，预计需要半天。为了避免它长期变成无归属工作，我们一起确认后续负责人和流程。另外，C 项目开始时，希望你能把我加入前期讨论。”</p>
+              <p class="scenario-note">先建立边界，再谈互惠。对紧急救助、团队公共责任和日常互助，不必每次都即时索取回报。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="growth" data-keywords="表扬 辛苦 认可 成果 责任">
+            <summary><span class="scenario-num">09</span><span class="scenario-title"><strong>老板说“辛苦了”</strong><span>接受认可并连接下一步</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“谢谢认可。这一阶段的核心目标已经达成，接下来我会继续关闭 X 风险。这套做法也可以复用到 C 项目，我愿意整理成模板并承担首轮落地。”</p>
+              <p class="scenario-note">接受表扬不等于独占功劳。应在合适时明确团队贡献和关键协作者。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="growth" data-keywords="误会 错怪 责任 事实 澄清">
+            <summary><span class="scenario-num">10</span><span class="scenario-title"><strong>被误解或被错怪</strong><span>先控制损失，再依据事实澄清</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“收到，我先处理当前影响。为避免判断偏差，我补充一下事实：X 由我负责，已在周二完成；当前问题发生在 Y 环节，由 Z 负责。我会与相关同事一起关闭问题，并把责任边界和后续检查点写清楚。”</p>
+              <p class="scenario-note">不要暗示性甩锅，也不要为了“顾全大局”吞下错误责任。事实、时间线和职责记录是最稳妥的澄清方式。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="entry" data-keywords="简历 兼职 项目 职业能力 量化">
+            <summary><span class="scenario-num">11</span><span class="scenario-title"><strong>把普通经历写进简历</strong><span>任务、能力、行动、结果</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">原始事实：“餐厅兼职，负责收银和安排座位。”职业表达：“参与门店高峰运营，负责交易处理、客户分流与现场协调；在高峰时段维持 X 桌并行服务，协助培训 Y 名新员工。”</p>
+              <p class="scenario-note">职业化翻译可以提升信息密度，但职责级别、团队身份和数字都必须真实。小基数增长率需同时给出绝对值。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="entry" data-keywords="面试 自我介绍 30秒 经历 技能">
+            <summary><span class="scenario-num">12</span><span class="scenario-title"><strong>30 秒面试自我介绍</strong><span>定位、证据、能力、引导</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“我有 X 年产品经验，主要经历了 A、B 两类业务，负责过 C 项目。我的核心能力是用户洞察、跨部门推进和数据复盘。最近一项结果是 D。你更希望我先展开业务增长还是复杂项目交付？”</p>
+              <p class="scenario-note">引导不等于控制面试。给出结构后，应尊重面试官的节奏和问题路径。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="entry" data-keywords="面试 回答 STAR 成长 结果">
+            <summary><span class="scenario-num">13</span><span class="scenario-title"><strong>回答行为面试问题</strong><span>背景、行动、结果、成长</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“当时三个部门对需求优先级没有共识。我建立统一评审表并组织两轮决策会议，最终项目提前两周交付，转化率提升 18%。这次经历让我形成了跨部门决策机制，后来在 X 项目再次复用。”</p>
+              <p class="scenario-note">结果不只可以是收入，也可以是时间、质量、风险、效率、体验、决策速度或组织能力。</p>
+            </div>
+          </details>
+
+          <details class="scenario" data-category="entry" data-keywords="薪资 谈薪 预算 区间 上限">
+            <summary><span class="scenario-num">14</span><span class="scenario-title"><strong>讨论期望薪资</strong><span>市场依据、岗位范围与谈判空间</span></span><span class="scenario-plus" aria-hidden="true"></span></summary>
+            <div class="scenario-body">
+              <p class="scenario-label">Template</p>
+              <p class="script">“我希望先确认岗位职责、级别和整体薪酬结构。结合市场数据与我的相关经验，我目前关注 X–Y 的区间；如果职责覆盖多条业务线并包含 Z，我会争取区间上部。方便分享该岗位的预算范围吗？”</p>
+              <p class="scenario-note">不要把“永远不先报价”当铁律。提前研究市场、确定底线与目标区间，并根据当地规则和流程灵活回应。</p>
+            </div>
+          </details>
+        </div>
+        <div class="empty-result" id="emptyResult">没有匹配的话术。试试更短的关键词，或切换到“全部”。</div>
+      </div>
+    </section>
+
+    <section class="section black" id="practice">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">30-day practice</p>
+          <h2>把方法练成习惯</h2>
+          <p>每周只训练一个主能力。真实使用、记录反馈、再迭代，比背诵全部模板更有效。</p>
+        </div>
+        <div class="practice-grid">
+          <article class="week">
+            <span class="week-num">Week 01</span>
+            <h3>目标与边界</h3>
+            <p>停止接到任务就立刻开工。</p>
+            <ul>
+              <li>每个新任务至少问一次成功标准</li>
+              <li>写清优先级、责任人与截止时间</li>
+              <li>用一页纸列计划、资源与风险</li>
+            </ul>
+          </article>
+          <article class="week">
+            <span class="week-num">Week 02</span>
+            <h3>结果与证据</h3>
+            <p>停止只描述过程和忙碌。</p>
+            <ul>
+              <li>为三个日常任务补充结果指标</li>
+              <li>建立个人“成果证据库”</li>
+              <li>把一项杂事改写为流程贡献</li>
+            </ul>
+          </article>
+          <article class="week">
+            <span class="week-num">Week 03</span>
+            <h3>方案与表达</h3>
+            <p>停止把裸问题直接抛给别人。</p>
+            <ul>
+              <li>每次升级问题至少准备两个选项</li>
+              <li>练习一分钟结果前置汇报</li>
+              <li>复盘一次失败并提出预防机制</li>
+            </ul>
+          </article>
+          <article class="week">
+            <span class="week-num">Week 04</span>
+            <h3>机会与复利</h3>
+            <p>停止等待别人自动发现你。</p>
+            <ul>
+              <li>主动申请一个明确责任模块</li>
+              <li>把一次交付整理为可复用模板</li>
+              <li>与经理做一次责任与发展对话</li>
+            </ul>
+          </article>
+        </div>
+        <div class="daily-card">
+          <strong>每天 5 分钟复盘</strong>
+          <p>今天我推动了什么？留下了什么证据？谁理解了这项价值？下一步需要什么决策？这件事沉淀成了什么能力、案例、流程或关系？</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gray" id="guardrails">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">Guardrails</p>
+          <h2>六条边界校正</h2>
+          <p>原始视频中最有传播力的部分，往往也是最容易被误用的部分。方法有效的前提，是不透支长期信任。</p>
+        </div>
+        <div class="guardrails">
+          <div class="guardrail-head"><div>风险模式</div><div>为什么危险</div><div>正确校正</div></div>
+          <div class="guardrail-row">
+            <div class="risk-name">把“参与”写成“负责”</div>
+            <div class="risk">夸大职责会在追问、背调或入职后暴露，直接损害诚信。</div>
+            <div class="correction">写清自己实际负责的子任务、决策、动作与结果，不虚构职位、身份或领导范围。</div>
+          </div>
+          <div class="guardrail-row">
+            <div class="risk-name">为了推进而把任务推出去</div>
+            <div class="risk">没有上下文、责任人与验收条件的转交，本质是推责。</div>
+            <div class="correction">推进意味着暴露阻塞、指定下一责任人、保留跟进责任，并确保信息完整交接。</div>
+          </div>
+          <div class="guardrail-row">
+            <div class="risk-name">人为增加流程建立壁垒</div>
+            <div class="risk">无价值步骤会拖慢组织，形成信息垄断和个人依赖。</div>
+            <div class="correction">新增步骤必须降低风险、提高质量或加快决策，并应文档化、可交接、可被团队复用。</div>
+          </div>
+          <div class="guardrail-row">
+            <div class="risk-name">用“高级利己”合理化索取</div>
+            <div class="risk">只谈自己的资源和回报，会削弱合作意愿与团队信任。</div>
+            <div class="correction">先确认共同目标与自己能创造的价值，再讨论边界、资源和长期互惠。</div>
+          </div>
+          <div class="guardrail-row">
+            <div class="risk-name">先不澄清、暗中把锅甩走</div>
+            <div class="risk">模糊暗示责任人会制造防御、政治化与二次误解。</div>
+            <div class="correction">先控制影响，再用时间线、职责和证据中性澄清；聚焦系统修复，不攻击个人。</div>
+          </div>
+          <div class="guardrail-row">
+            <div class="risk-name">把群体印象当规律</div>
+            <div class="risk">刻板印象会误判个人、忽略文化与情境差异，并破坏包容性。</div>
+            <div class="correction">只讨论具体行为是否有效，把方法视为可选择的工具，而不是某个族群的本质特征。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="checklist">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">One-page field guide</p>
+          <h2>带走这一页就够了</h2>
+          <p>遇到任何重要任务，先过左边七问；每周更新一次右边的职业筹码账本。</p>
+        </div>
+        <div class="checklist-layout">
+          <article class="checklist-card">
+            <h3>任务前后七问</h3>
+            <p>从“我该做什么”切换到“如何创造并证明价值”。</p>
+            <ul class="checklist">
+              <li><span class="check" aria-hidden="true"></span><span>成功标准是什么？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>最重要的优先级是什么？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>我需要哪些资源与决策？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>下一步如何让事情继续流动？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>结果由什么证据证明？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>谁需要理解这项价值？</span></li>
+              <li><span class="check" aria-hidden="true"></span><span>这次工作留下了什么可复用资产？</span></li>
+            </ul>
+          </article>
+          <article class="ledger">
+            <div class="ledger-head">
+              <h3>职业筹码账本</h3>
+              <span class="ledger-badge">Update weekly</span>
+            </div>
+            <div class="ledger-grid">
+              <div class="ledger-item"><strong>结果</strong><span>收入、成本、时间、质量、体验或风险发生了什么变化？</span></div>
+              <div class="ledger-item"><strong>证据</strong><span>数据、文档、反馈、版本、案例或验收记录在哪里？</span></div>
+              <div class="ledger-item"><strong>能力</strong><span>这次新增或验证了哪项可迁移能力？</span></div>
+              <div class="ledger-item"><strong>方法</strong><span>能否整理成模板、清单、流程或决策框架？</span></div>
+              <div class="ledger-item"><strong>关系</strong><span>与哪些人建立了可信协作？下一次如何共同创造价值？</span></div>
+              <div class="ledger-item"><strong>机会</strong><span>这项结果可以支持哪种更高责任、项目或岗位？</span></div>
+              <div class="ledger-item"><strong>边界</strong><span>哪些职责、风险或资源需要在下一次提前说清？</span></div>
+              <div class="ledger-item"><strong>复用</strong><span>下一次在什么情境下能更快、更稳地做成？</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gray" id="sources">
+      <div class="container-wide">
+        <div class="section-head">
+          <p class="eyebrow">Source index</p>
+          <h2>资料来源</h2>
+          <p>本页基于飞书表格中 8 条有完整文稿的记录提炼；第 9 条记录仅有标题、正文及分析字段为空，未纳入方法论。</p>
+        </div>
+        <div class="source-grid">
+          <a class="source-card" href="https://www.douyin.com/video/7672582871425666161" target="_blank" rel="noreferrer">
+            <small>01 · 向上管理 · 06:53</small><strong>学习印度人和老板相处之道，职业生涯更顺利。</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7672221973003821297" target="_blank" rel="noreferrer">
+            <small>02 · 简历求职 · 07:01</small><strong>学习印度人简历，为三无应届生赢得面试机会！</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7671855509222494129" target="_blank" rel="noreferrer">
+            <small>03 · 职场思维 · 07:24</small><strong>学习印度人的“利己”思维，祝你平步青云！</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7671128202903931065" target="_blank" rel="noreferrer">
+            <small>04 · 工作汇报 · 05:42</small><strong>学习印度人汇报攻略，职业生涯更顺利。</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7670741778769468593" target="_blank" rel="noreferrer">
+            <small>05 · 面试谈薪 · 04:02</small><strong>4 个面试模板话术，涨薪 50% 的印度人都在用！</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7670421669269559665" target="_blank" rel="noreferrer">
+            <small>06 · 晋升策略 · 02:23</small><strong>印度人邪修晋升法，祝你早日成功！</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7670103586437034865" target="_blank" rel="noreferrer">
+            <small>07 · 薪资谈判 · 02:57</small><strong>关于期望薪资，送你印度人的标准回答。</strong><span>查看原视频 ↗</span>
+          </a>
+          <a class="source-card" href="https://www.douyin.com/video/7669594013737584305" target="_blank" rel="noreferrer">
+            <small>08 · 面试沟通 · 03:07</small><strong>学习印度人的有效客套话，帮你成功拿下 offer！</strong><span>查看原视频 ↗</span>
+          </a>
+        </div>
+        <p class="method-note">提炼方法：逐条读取完整文稿、原表关键观点与风险提示，合并重复模式，区分事实表达与传播性修辞，再补充适用条件、反模式和练习路径。未引入外部统计数据或未经来源支持的族群结论。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span><strong>结构化职场行动方法论</strong> · 基于 8 条海外职场视频整理</span>
+      <span>版本 1.0 · 2026-08-12 · 本地阅读版</span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const progress = document.getElementById("readingProgress");
+      const navLinks = [...document.querySelectorAll(".nav-links a")];
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.getElementById("navLinks");
+      const printButton = document.getElementById("printButton");
+      const search = document.getElementById("scenarioSearch");
+      const filters = [...document.querySelectorAll(".filter-button")];
+      const scenarios = [...document.querySelectorAll(".scenario")];
+      const emptyResult = document.getElementById("emptyResult");
+      let activeFilter = "all";
+
+      const updateProgress = () => {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+        progress.style.width = `${Math.min(100, Math.max(0, ratio * 100))}%`;
+      };
+
+      const closeMenu = () => {
+        menu.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "打开目录");
+      };
+
+      const applyScenarioFilter = () => {
+        const query = search.value.trim().toLowerCase();
+        let visibleCount = 0;
+        scenarios.forEach((scenario) => {
+          const categoryMatch = activeFilter === "all" || scenario.dataset.category === activeFilter;
+          const text = `${scenario.textContent} ${scenario.dataset.keywords || ""}`.toLowerCase();
+          const queryMatch = !query || text.includes(query);
+          const visible = categoryMatch && queryMatch;
+          scenario.hidden = !visible;
+          if (visible) visibleCount += 1;
+        });
+        emptyResult.style.display = visibleCount ? "none" : "block";
+      };
+
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      updateProgress();
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        document.body.classList.toggle("menu-open", isOpen);
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "关闭目录" : "打开目录");
+      });
+
+      navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+      printButton.addEventListener("click", () => window.print());
+      search.addEventListener("input", applyScenarioFilter);
+
+      filters.forEach((button) => {
+        button.addEventListener("click", () => {
+          activeFilter = button.dataset.filter;
+          filters.forEach((item) => item.classList.toggle("active", item === button));
+          applyScenarioFilter();
+        });
+      });
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${visible.target.id}`);
+        });
+      }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 0.25, 0.5] });
+
+      document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
+    })();
+  </script>
+</body>
+</html>
